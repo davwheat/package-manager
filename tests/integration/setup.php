@@ -12,8 +12,7 @@ use Flarum\PackageManager\Tests\integration\SetupComposer;
 
 require __DIR__.'/../../vendor/autoload.php';
 
-putenv('FLARUM_TEST_TMP_DIR_LOCAL='.realpath('../tmp'));
-echo realpath('../tmp');
+putenv('FLARUM_TEST_TMP_DIR_LOCAL='.realpath(__DIR__.'/../tmp'));
 
 $setup = new SetupScript();
 
