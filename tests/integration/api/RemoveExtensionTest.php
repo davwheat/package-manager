@@ -32,9 +32,9 @@ class RemoveExtensionTest extends TestCase
             ])
         );
 
-        $this->assertEquals(200, $response->getStatusCode());
+        $this->assertEquals(204, $response->getStatusCode());
         $this->assertExtensionNotExists('flarum-tags');
 
-        $this->requireExtension('flarum/tags');
+        $this->requireExtension('flarum/tags:*');
     }
 }

@@ -37,8 +37,6 @@ class RequireExtensionTest extends TestCase
             ])
         );
 
-        var_dump($response->getBody()->getContents());
-
         $this->assertEquals(200, $response->getStatusCode());
         $this->assertExtensionExists('v17development-blog');
 
